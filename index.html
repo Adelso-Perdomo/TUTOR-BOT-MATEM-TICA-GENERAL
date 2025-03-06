@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Álgebrabot</title>
+    <title>Tutor-Bot</title>
 </head>
 <body>
-    <h1>Bienvenido a nuestro ALGEBRABOT</h1>
+    <h1>Bienvenido a nuestro TUTOR-BOT PARA MATEMÁTICA GENERAL</h1>
     <p>Interactúa con el chatbot utilizando el widget a continuación:</p>
-  <img src="single.webp" alt="Algebrabot" style="max-width: 100%; height: auto;">
+  <img src="Imagen1.webp" alt="Tutor-Bot" style="max-width: 100%; height: auto;">
 
     <!-- Script del chatbot -->
 <script type="text/javascript">
@@ -16,9 +16,12 @@
       var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
       v.onload = function() {
         window.voiceflow.chat.load({
-          verify: { projectID: '67b4922af7dbc256853bfa6e' },
+          verify: { projectID: '67c86446b7209d64e3647b96' },
           url: 'https://general-runtime.voiceflow.com',
-          versionID: 'production'
+          versionID: 'production', 
+          voice: { 
+            url: "https://runtime-api.voiceflow.com" 
+          }
         });
       }
       v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
